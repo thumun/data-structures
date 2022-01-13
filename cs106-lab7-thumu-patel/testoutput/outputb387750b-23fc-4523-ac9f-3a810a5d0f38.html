@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Run-Time Analysis for Deduplication Methods</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Run-Time Analysis for Deduplication Methods',
+    height: 600,
+    width: 800,
+    showlegend: true,
+    xaxis: {
+    title: 'rows',
+    },
+
+    yaxis: {
+    title: 'run-time (s)',
+    },
+
+};
+
+var trace0 =
+{
+x: ["0.0","100.0","200.0","300.0","400.0","500.0","600.0","700.0","800.0","900.0"],
+y: ["0.0","0.002446918","0.002336256","0.00370684","0.00467376","0.001906416","0.002382536","0.003604601","0.004909875","0.005919083"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'All Pairs',
+};
+var trace1 =
+{
+x: ["0.0","100.0","200.0","300.0","400.0","500.0","600.0","700.0","800.0","900.0"],
+y: ["0.0","0.016488248","0.008949599","0.007158376","0.009622985","0.007844248","0.006411911","0.00694774","0.00848813","0.007850677"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Hash',
+};
+var trace2 =
+{
+x: ["0.0","100.0","200.0","300.0","400.0","500.0","600.0","700.0","800.0","900.0"],
+y: ["0.0","8.96419E-4","6.82718E-4","2.47575E-4","3.20998E-4","3.93988E-4","4.45419E-4","6.06182E-4","4.64466E-4","4.88014E-4"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Quick Sort ',
+};
+
+        var data = [ trace0, trace1, trace2];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>

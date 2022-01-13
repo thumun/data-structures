@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'title',
+    height: 600,
+    width: 800,
+    xaxis: {
+    title: 'n',
+    },
+
+    yaxis: {
+    title: 'time (ns)',
+    },
+
+};
+
+var trace0 =
+{
+x: ["1.0","1.0","2.0","3.0","5.0","8.0","13.0","21.0","34.0","55.0","89.0","144.0","233.0","377.0","610.0","987.0","1597.0","2584.0","4181.0","6765.0"],
+y: ["1.0","0.0","0.0","0.0","0.0","1.0","1.0","3.0","5.0","19.0","15.0","25.0","14.0","3.0","3.0","8.0","27.0","16.0","25.0","40.0"],
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>

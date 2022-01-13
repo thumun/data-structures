@@ -1,0 +1,24 @@
+>>> socl182-lottery.csv --find INT SOCL182
+INT's position in SOCL182 lottery is E1.
+
+>>> socl182-lottery.csv --find CHR SOCL182
+CHR is not on the lottery for SOCL182.
+
+>>> socl182-lottery.csv --find RDC SOCL182
+RDC's position in SOCL182 lottery is W3.
+
+>>> socl182-lottery.csv --find ICK SOCL182
+ICK's position in SOCL182 lottery is W5.
+
+>>> socl182-lottery.csv --print SOCL182 all
+SOCL182 Lottery: all
+E1. INT 3 26
+E2. JEG 3 23
+E3. RFO 1 20
+W1. WSP 1 20
+W2. ZBR 1 20
+W3. RDC 1 17
+W4. BZN 2 12
+W5. ICK 4 11
+W6. GES 4 8
+W7. WEB 4 8

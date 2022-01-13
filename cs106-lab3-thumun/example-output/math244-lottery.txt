@@ -1,0 +1,24 @@
+>>> math244-lottery.csv --find BHB MATH244
+BHB's position in MATH244 lottery is W1.
+
+>>> math244-lottery.csv --find UUC MATH244
+UUC is not on the lottery for MATH244.
+
+>>> math244-lottery.csv --find ZZZ MATH244
+ZZZ is not on the lottery for MATH244.
+
+>>> math244-lottery.csv --find TLI MATH244
+TLI's position in MATH244 lottery is E4.
+
+>>> math244-lottery.csv --print MATH244 all
+MATH244 Lottery: all
+E1. NLV 3 39
+E2. GCE 4 37
+E3. OEU 4 37
+E4. TLI 4 37
+W1. BHB 3 36
+W2. CWP 3 36
+W3. INO 3 36
+W4. CNG 4 34
+W5. IDN 4 34
+W6. CJS 3 31

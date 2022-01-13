@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>runtime vs n for fib recursive method</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'runtime vs n for fib recursive method',
+    height: 600,
+    width: 800,
+    xaxis: {
+    title: 'n',
+    },
+
+    yaxis: {
+    title: 'time (ns)',
+    },
+
+};
+
+var trace0 =
+{
+x: ["0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0"],
+y: ["1552.0","441.0","643.0","653.0","801.0","1164.0","1771.0","2759.0","5165.0","13757.0","13091.0","19390.0","14308.0","2685.0","3843.0","8343.0","37861.0","16227.0","24446.0","39464.0","63283.0","101340.0","163020.0","128835.0","197259.0","319594.0","512116.0","821183.0","1336848.0","2152688.0","3506062.0","5638946.0","9298990.0","1.4913757E7","2.5141523E7","3.9560001E7","6.2430625E7","9.1634027E7","1.47904767E8","2.38396719E8"],
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Run-Time Analysis for Deduplication Methods</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Run-Time Analysis for Deduplication Methods',
+    height: 600,
+    width: 800,
+    showlegend: true,
+    xaxis: {
+    title: 'rows',
+    },
+
+    yaxis: {
+    title: 'run-time (s)',
+    },
+
+};
+
+var trace0 =
+{
+x: ["1.0","101.0","201.0","301.0","401.0","501.0","601.0","701.0","801.0","901.0","1001.0","1101.0","1201.0","1301.0","1401.0"],
+y: ["8.465E-6","0.001703512","0.001431041","0.00308626","0.002814296","0.001478215","0.001859036","0.003235847","0.003526122","0.004541092","0.005462652","0.017984095","0.008376944","0.010482759","0.01131526"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'All Pairs',
+};
+var trace1 =
+{
+x: ["1.0","101.0","201.0","301.0","401.0","501.0","601.0","701.0","801.0","901.0","1001.0","1101.0","1201.0","1301.0","1401.0"],
+y: ["0.012173022","0.006376271","0.004544197","0.00635918","0.006279281","0.007753211","0.007458958","0.008290781","0.006121831","0.006041153","0.005321735","0.007402644","0.008114799","0.008247745","0.005845645"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Hash',
+};
+var trace2 =
+{
+x: ["1.0","101.0","201.0","301.0","401.0","501.0","601.0","701.0","801.0","901.0","1001.0","1101.0","1201.0","1301.0","1401.0"],
+y: ["7.81E-6","1.76702E-4","2.42862E-4","2.08085E-4","2.49086E-4","3.31764E-4","6.97779E-4","8.76887E-4","3.99153E-4","4.04094E-4","4.0441E-4","5.03933E-4","6.86507E-4","6.31341E-4","6.19211E-4"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Quick Sort ',
+};
+
+        var data = [ trace0, trace1, trace2];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
